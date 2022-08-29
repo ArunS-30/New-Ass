@@ -17,8 +17,7 @@ public class UserProfile {
 
 	@Id
 	@Column(name = "id")
-	@SequenceGenerator(initialValue = 1, name = "up_seq", sequenceName = "up_sequence")
-	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "up_seq")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
 
 	@Column(name = "phone_number")
